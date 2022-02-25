@@ -36,8 +36,18 @@
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
 def one(input1, input2):
-	return ""
+	pass
 
+input1=input("input1 here: ")
+input2=input("input2 here: ")
+
+def one(input1, input2):
+    pass
+if len(input1) == len(input2):
+        print (input1, input2)
+else:
+    if len(input1) != len(input2):
+        print(input2)
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 2>
@@ -60,7 +70,17 @@ def one(input1, input2):
 	# No hints for this question
 
 def two(arg1):
-	return "null"
+	for i in arg1:
+		if i % 3:
+			return "fizz"
+		elif i % 5:
+			return "buzz"
+		elif i % 3 or i % 5:
+			return "fizzbuzz"
+		else:
+			return "null"
+	print(arg1) 		
+
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -79,7 +99,9 @@ def two(arg1):
 	# How do we ignore case in a String? help(str) may offer some insight.
 
 def three(input):
-    return 0
+    vowels = ['a', 'e', 'i' ,'o' ,'u']
+	return len([i for i in string i in vowels])
+
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -103,6 +125,7 @@ def three(input):
 
 def four(input):
     return False
+help(range)
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -122,7 +145,14 @@ def four(input):
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def five(input):
-	return 1
+	if input == 1:
+		return 1
+	else:
+		return (input * five(input-1))
+
+
+
+
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -194,7 +224,11 @@ def seven(inputString, char):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def eight(arg1):
-	return 0
+	for i in arg1:
+		split_string = arg1.split()
+
+
+
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
